@@ -1,0 +1,248 @@
+
+.container_Header{
+  margin-bottom: 80px!important;
+}
+.container_row{
+  margin-top: 35px!important;
+}
+  .slideshow-container {
+    width: 80%;
+    margin: auto;
+    
+  }
+  
+  .main-image img {
+    width: 100%;
+    /*max-height: 400px;*/
+    object-fit: cover;
+  }
+  .main-image.zoomed {
+  cursor: zoom-out;
+  transform: scale(1.5); /* Adjust scale value for desired zoom level */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+.main-image.zoomed img{
+
+  z-index: 1001; /* Ensure it appears above other elements */
+}
+  
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    height:auto;
+    max-height: 120px;
+    overflow-y: overlay;
+    
+    /*scrollbar-color: var(--c_04) var(--c_1);
+    scrollbar-width: thin;*/
+
+  }
+
+   /* Scrollbar styles for Webkit browsers (Chrome, Safari) */
+   .thumbnail-container::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+    }
+
+    .thumbnail-container::-webkit-scrollbar-track {
+        background: var(--c_2); /* Background of the scrollbar track */
+        border-radius: 10px; /* Rounded corners for the track */
+    }
+
+    .thumbnail-container::-webkit-scrollbar-thumb {
+        background: var(--c_04); /* Color of the scrollbar thumb */
+        border-radius: 10px; /* Rounded corners for the thumb */
+    }
+
+    .thumbnail-container::-webkit-scrollbar-thumb:hover {
+        background: var(--c_5); /* Color of the thumb on hover */
+    }
+  
+  .thumbnail {
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  .thumbnail img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  .thumbnail.active {
+    border: 2px solid #007bff;
+    opacity: 1;
+  }
+
+
+
+.project_details .info_01{
+  padding-top: 20px ;
+}
+.project_details .info_01 h3 strong{font-size: large;}
+
+.project_details .row h2{
+  color: var(--color_txt_1);
+  font-size: 32px;
+  margin: 0px 0px 25px  0px;
+
+}
+.project_details .row h3{
+  color: var(--color_txt_1);
+  font-size: 16px;
+  margin: 15px 0px;
+  font-family: Arial, sans-serif;
+
+}
+.project_details .info_01 span {
+  font-size: 16px;
+
+}
+
+.H3_SpanPCate{
+  display: flex;
+  flex-wrap: wrap;
+}
+.H3_SpanPCate span{
+  margin:3px 5px
+}
+
+.project-title{
+  font-size: 28px!important;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--color_txt_1);
+  position: relative;
+}
+
+.project-title:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--c_4);
+  visibility: visible;
+  width: 70px;
+  transition: all 0.3s ease-in-out 0s;
+  margin-left: 15px;
+}
+
+.Technology-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+.Technology-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: var(--c_4);
+  border: 2px solid var(--c_4);
+}
+
+.Technology-item h4 {
+line-height: 0;
+font-size: 22px;
+font-weight: 600;
+text-transform: uppercase;
+font-family: "Poppins", sans-serif;
+color: var(--c_4);
+margin-bottom: 10px;
+}
+
+.Technology-item h4 i{
+  color: var(--color_txt_1);
+
+  }
+  
+.Technology-item h5 {
+font-size: 16px;
+background: rgba(255, 255, 255, 0.15);
+padding: 5px 15px;
+display: inline-block;
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+.Technology-item ul {
+padding-left: 20px;
+}
+
+ .Technology-item ul li {
+padding-bottom: 10px;
+}
+
+
+/* Nested List */
+.nested_list_data{
+ color:var(--color_txt_1);  
+}
+
+.nested_list_data h3{
+  font-size: 22px!important;
+}
+.nested_list_data h4{
+  font-size: 20px!important;
+}
+.nested_list_data h5{
+  font-size: 18px!important;
+}
+.nested_list_data h6{
+  font-size: 16px!important;
+}
+
+.nested_list_data .NLD_1 {
+  font-size: 20px;
+  font-weight: 550;
+  list-style-type: disc;
+  padding: 10px 0px;
+}
+.nested_list_data .NLD_1 p{
+  font-size: 16px!important;
+}
+
+.nested_list_data .NLD_2{
+  font-size: 18px;
+  font-weight: 100;
+  list-style-type: circle;
+}
+.nested_list_data .VisMed{
+  margin: 15px 0px 30px 0px ;
+}
+.nested_list_data img {
+  position: relative;
+  width: 100%;
+  
+  /*max-height: 400px;*/
+  /*object-fit: cover;*/
+  padding: 10px 10px 10px 0px;
+
+
+}
+.nested_list_datad img:hover {
+transform: scale(1.3);
+  position: absolute;
+  margin: auto;
+  width: 100%;
+}
+
+.nested_list_data  .VidDemo{
+  margin: 30px 0px;
+}
+.nested_list_data video {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  padding-right: 10px;
+
+}

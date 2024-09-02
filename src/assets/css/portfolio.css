@@ -1,0 +1,314 @@
+
+  
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: calc(33.333% - 40px);
+  box-sizing: border-box;
+}
+
+.project-item img {
+  max-width: 100%;
+}
+
+.project-item h3 {
+  margin: 10px 0;
+}
+
+.project-item p {
+  color: #666;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+
+.filter button {
+  margin-right: 10px;
+}
+
+.portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+  
+  .portfolio #portfolio-filters {
+    padding: 0;
+    margin: 0 auto 15px auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+    padding: 2px 15px;
+  }
+  
+  .portfolio #portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--c_4);
+    background: var(--bg_box_color);
+    margin: 0 3px 10px 3px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+  }
+  
+  .portfolio #portfolio-filters li:hover,
+  .portfolio #portfolio-filters li.filter-active {
+    background: var(--c_4);
+    color: var(--c_1);
+  }
+  
+  .portfolio #portfolio-filters li:last-child {
+    margin-right: 0;
+  }
+  
+.search_cate{
+    padding: 0!important;
+}
+.search_cate_input{
+  border: none; /* Adjust border as needed */
+  border-radius: 4px; /* Rounded corners */
+  padding: 8px; /* Space inside the input */
+  font-size: 14px; /* Adjust text size */
+  width: 200px; /* Set a fixed width or use a percentage */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  background-color: var(--bg_box_color);
+  color: var(--c_04);
+}
+.search_cate:hover{
+  background-color:var(--bg_box_color) !important;
+  
+}
+.search_cate_input::placeholder {
+  color: var(--c_04);
+  background-color:var(--bg_box_color) ;
+}
+
+  .portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .portfolio .portfolio-wrap::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info::before {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border-top: 3px solid var(--color_txt_1);
+    border-left: 3px solid var(--color_txt_1);
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    border-bottom: 3px solid var(--color_txt_1);
+    border-right: 3px solid var(--color_txt_1);
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: var(--color_txt_1);
+    font-weight: 600;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info p {
+    color: var(--color_txt_1)fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links {
+    text-align: center;
+    z-index: 4;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a {
+    color: var(--color_txt_1);
+    margin: 0 2px;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: var(--c_6);
+  }
+  
+  .portfolio .portfolio-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info::before {
+    top: 15px;
+    left: 15px;
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info::after {
+    bottom: 15px;
+    right: 15px;
+  }
+
+
+.project_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project_item_container{}
+
+
+.project_item {
+  position: relative;
+  background-color: rgba(11, 12, 16, 0.6);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: inset;
+}
+  
+.project_item:hover{
+  border: 1px solid var(--c_04);
+}
+.project_img{
+  position: relative;
+}
+.project_item img{
+  border-top-right-radius:20px;
+  border-top-left-radius:20px;
+  max-width: 100%;
+  transition: all ease-in-out 0.3s;
+}
+
+.project_more {
+  
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  
+  transition: all ease-in-out 0.3s;
+  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.project_img:hover + .project_more, .project_more:hover {
+  transition: all 1s ease-in 1s;
+  opacity: 1;
+  display: flex;
+  z-index: 99;
+}
+
+.project_item h2{
+  color: var(--color_txt_1);
+}
+.project_item p{
+  color: var(--color_txt_1);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.portfolio_con{
+  display: block;
+}
+
+.project_cate {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+    gap: 10px;
+}
+
+
+
+.project_link{
+  text-decoration: none;
+  color: var(--c_04);
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
