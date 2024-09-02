@@ -64,7 +64,7 @@ const root = ReactDOM.createRoot(document.getElementById('main'));
 document.getElementById('main').style.backgroundImage  = `url(${process.env.PUBLIC_URL + "/./images/main/bg_2.jpg"})`;
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App/>
   </React.StrictMode>
 );
 
