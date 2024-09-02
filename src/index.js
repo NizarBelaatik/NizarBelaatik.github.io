@@ -20,11 +20,44 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
+
+import Home from './pages/Home'
+import About from './pages/About'
+import Resume from './pages/Resume'
+import Portfolio from './pages/Portfolio'
+import Contact from './pages/Contact'
+import Project from './pages/Project'
+import NotFound from './pages/NotFound'
+
 const router = createHashRouter([
   {
-    path: "/*",
-    element: <App />,
-  }
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/resume",
+    element: <Resume />,
+  },
+  {
+    path: "/portfolio",
+    element: <Portfolio />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/project/:id",
+    element: <Project />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('main'));
