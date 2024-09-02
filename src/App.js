@@ -14,7 +14,7 @@ import NotFound from './pages/NotFound'
 function App() {//background: var(--c_2) url("./images/main/bg.jpg")  no-repeat;
   
   return (
-    <BrowserRouter basename="/NizarBelaatik.github.io">
+    <BrowserRouter >
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/About" element={<About/>}></Route>
