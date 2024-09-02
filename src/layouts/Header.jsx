@@ -28,10 +28,10 @@ export default function Header(props) {
                 <nav id="navbar" className={`navbar ${isNavOpen ? 'navbar-mobile' : ''} `}>
                     <ul>
                     <li><a className={ props.page=='Home'?['nav-link active']: 'nav-link' } href="/">{t('Home.Title')}</a></li>
-                    <li><a className={ props.page=='About'?['nav-link active']: 'nav-link' } href="/About">{t('About.Title')}</a></li>
-                    <li><a className={ props.page=='Resume'?['nav-link active']: 'nav-link' } href="/Resume">{t('Resume.Title')}</a></li>
-                    <li><a className={ props.page=='Portfolio'?['nav-link active']: 'nav-link' } href="/Portfolio">{t('Portfolio.Title')}</a></li>
-                    <li><a className={ props.page=='Contact'?['nav-link active']: 'nav-link' } href="/Contact">{t('Contact.Title')}</a></li>
+                    <li><a className={ props.page=='About'?['nav-link active']: 'nav-link' } href="/#/About">{t('About.Title')}</a></li>
+                    <li><a className={ props.page=='Resume'?['nav-link active']: 'nav-link' } href="/#/Resume">{t('Resume.Title')}</a></li>
+                    <li><a className={ props.page=='Portfolio'?['nav-link active']: 'nav-link' } href="/#/Portfolio">{t('Portfolio.Title')}</a></li>
+                    <li><a className={ props.page=='Contact'?['nav-link active']: 'nav-link' } href="/#/Contact">{t('Contact.Title')}</a></li>
                     
                     
 
