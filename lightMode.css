@@ -1,0 +1,33 @@
+:root {
+    --clr_1: #66FCF1; /* Accent color remains the same */
+    --clr_2: #323946; /* Secondary color remains the same */
+    --clr_3: #F1F2F6; /* Light background color */
+    --clr_4: #45A29E; /* Accent color remains the same */
+  
+    --c_0: #F1F2F6; /* Light background color */
+    --c_1: rgba(241, 242, 246, 0.95); /* Slightly transparent light background */
+    --c_2: #F1F2F6; /* Light background color */
+    --c_3: #0B0C10; /* Dark text color */
+    --c_04: #66FCF1; /* Accent color remains the same */
+    --c_4: rgb(83, 214, 205); /* Accent color remains the same */
+    --c_5: #45A29E; /* Accent color remains the same */
+    --c_6: #45A29E; /* Accent color remains the same */
+    --c_7: #45A29E; /* Accent color remains the same */
+  
+    --color_txt_1: #0B0C10; /* Dark text color for better readability */
+    --color_txt_2: rgba(11, 12, 16, 0.9); /* Slightly transparent dark text */
+  
+    --W: #0B0C10; /* Dark text color for consistency */
+  
+    --bg_color_01: rgba(241, 242, 246, 0.2); /* Semi-transparent light background */
+    --bg_color_02: rgba(255, 255, 255, 0.05); /* Slightly transparent light background */
+    --bg_box_color: rgba(11, 12, 16, 0.2); /* Light background with very subtle opacity for boxes */
+    --bg_box_color_02: rgba(11, 12, 16, 0.3);
+  
+    --header_color: rgb(11, 12, 16); /* Semi-transparent dark color for header */
+    --sec_t: rgba(11, 12, 16, 1);
+    
+    --lang_dp_color_txt_1:#fff;
+    
+  }
+  

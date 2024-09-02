@@ -1,0 +1,32 @@
+:root{
+    --clr_1:#66FCF1;
+    --clr_2:#323946;
+    --clr_3:#0B0C10;
+    --clr_4:#45A29E;
+  
+    --c_0:#0B0C10;
+    --c_1:rgba(11, 12, 16, 0.95);
+    --c_2:#0B0C10;
+    --c_3:#C5C6C7;
+    --c_04:#66FCF1;
+    --c_4:rgb(83, 214, 205);
+    --c_5:#45A29E;
+    --c_6:#45A29E;
+    --c_7:#45A29E;
+  
+    --color_txt_1:#fff;
+    --color_txt_2:rgba(255, 255, 255, 0.9);
+    
+    --W:#fff;
+  
+    --bg_color_01:rgba(11, 12, 16, 0.5);
+    --bg_color_02:rgba(0, 0, 0, 0.4);
+    --bg_box_color:rgba(255, 255, 255, 0.1);
+    --bg_box_color_02: rgba(255, 255, 255, 0.07);
+  
+    --header_color:rgba(255, 255, 255, 0.7);
+    --sec_t:#aaaaaa;
+  
+    --lang_dp_color_txt_1:#fff;
+  }
+  
