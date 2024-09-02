@@ -101,12 +101,7 @@ const projects_FR = [
           }
         ],
 
-        VideoDemo:[
-          { 
-            video:['1TAP _Trim.mp4'],
-            
-          }
-        ]
+        VideoDemo:null
       },
     },
 
