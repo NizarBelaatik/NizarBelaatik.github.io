@@ -35,11 +35,11 @@ const router = createHashRouter([
     element: <Home />,
   },
   {
-    path: "/about",
+    path: "/about/",
     element: <About />,
   },
   {
-    path: "/resume",
+    path: "/resume/",
     element: <Resume />,
   },
   {
@@ -64,7 +64,7 @@ const root = ReactDOM.createRoot(document.getElementById('main'));
 document.getElementById('main').style.backgroundImage  = `url(${process.env.PUBLIC_URL + "/./images/main/bg_2.jpg"})`;
 root.render(
   <React.StrictMode>
-    <App/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

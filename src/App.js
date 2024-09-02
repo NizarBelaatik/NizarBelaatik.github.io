@@ -13,9 +13,10 @@ import Contact from './pages/Contact'
 import Project from './pages/Project'
 import NotFound from './pages/NotFound'
 function App() {//background: var(--c_2) url("./images/main/bg.jpg")  no-repeat;
+  //<BrowserRouter basename='/https://nizarbelaatik.github.io'>
   
   return (
-    <BrowserRouter basename='/'>
+    
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/About" element={<About/>}></Route>
@@ -28,7 +29,6 @@ function App() {//background: var(--c_2) url("./images/main/bg.jpg")  no-repeat;
         <Route path="*" element={<NotFound/>}></Route>
         <Route path="/NotFound" element={<NotFound/>}></Route>
       </Routes>
-    </BrowserRouter>
   );
 }
 
