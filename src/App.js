@@ -3,7 +3,8 @@ import './App.css';
 //import './style.css';
 
 
-import {BrowserRouter, Routes, Route, Navigation} from "react-router-dom"
+import { Routes, Route, Navigation} from "react-router-dom"
+
 import Home from './pages/Home'
 import About from './pages/About'
 import Resume from './pages/Resume'
@@ -14,7 +15,6 @@ import NotFound from './pages/NotFound'
 function App() {//background: var(--c_2) url("./images/main/bg.jpg")  no-repeat;
   
   return (
-    <BrowserRouter basename="/NizarBelaatik.github.io">
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/About" element={<About/>}></Route>
@@ -27,7 +27,6 @@ function App() {//background: var(--c_2) url("./images/main/bg.jpg")  no-repeat;
         <Route path="*" element={<NotFound/>}></Route>
         <Route path="/NotFound" element={<NotFound/>}></Route>
       </Routes>
-    </BrowserRouter>
   );
 }
 
