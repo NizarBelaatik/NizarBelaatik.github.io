@@ -63,9 +63,9 @@ const router = createHashRouter([
 const root = ReactDOM.createRoot(document.getElementById('main'));
 document.getElementById('main').style.backgroundImage  = `url(${process.env.PUBLIC_URL + "/./images/main/bg_2.jpg"})`;
 root.render(
-  <HashRouter >
-    <App />
-  </HashRouter >
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
 
 
