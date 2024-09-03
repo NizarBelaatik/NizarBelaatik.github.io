@@ -39,7 +39,10 @@ function Home(){
       setIsVisible(false);
     };
 
-
+    useEffect(() => {
+      document.title = "Nizar Belaatik";
+    }, []);
+  
   return<>
 
 
