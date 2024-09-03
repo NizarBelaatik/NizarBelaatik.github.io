@@ -55,7 +55,15 @@ const router = createHashRouter([
     element: <Project />,
   },
   {
+    path: "/*",
+    element: <NotFound />,
+  },
+  {
     path: "*",
+    element: <NotFound />,
+  },
+  {
+    path: "/#/*",
     element: <NotFound />,
   },
 ]);

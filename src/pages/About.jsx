@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Header from '../layouts/Header';
-//import Header from '../layouts/Header_01';
 
 
 import '../assets/css/about.css';
@@ -54,7 +53,7 @@ function About(){
             </div>
           </div>
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>{t("About.About_me.Title_11")}</h3>
+            <h3>{t("About.About_me.Title_12")}</h3>
             <p className="fst-italic">
               {t('About.Description1')}
             </p>

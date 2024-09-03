@@ -1,0 +1,68 @@
+.Not_Found_404{
+    transition: ease-in-out 0.3s;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 997;
+    overflow-y: auto;
+    backdrop-filter: blur(6px);
+}
+.Not_Found_404 .container{
+    z-index: 998;
+    border-radius: 25px;
+    background-color: var(--bg_color_01)!important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: auto;
+    padding: 10px;
+
+}
+.Not_Found_404 h1 {
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+   
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: var(--c_4);
+}
+.Not_Found_404 h2 {
+    font-size: 42px;
+    margin-top: 20px;
+    color: var(--c_4)!important;
+    z-index: 999;
+    text-align: center;
+}
+
+.Not_Found_404 h3{
+    font-size: 22px;
+    margin-top: 20px;
+    color: var(--W)!important;
+    z-index: 999;
+    text-align: center;
+}
+.Not_Found_404 a{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--c_4);
+
+    color: var(--c_4);
+    white-space: nowrap;
+    transition: 0.3s;
+    
+}
+.Not_Found_404 a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--c_4);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}

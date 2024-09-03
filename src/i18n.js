@@ -48,9 +48,12 @@ const resources = {
 
         Home:{
             Title:"Home",
+            Title_hello:"Hello",
+            Title_im:"I'm",
+
             Title_before_span:"I'm a ",
             Title_span:"Software Developer",
-
+            Title_span2:"Full-Stack Developer",
             Title_after_span:"",
         },
 
@@ -59,6 +62,7 @@ const resources = {
             About_me:{
                 Title_1:"Learn more about me",
                 Title_11:"Software Developer",
+                Title_12:"Full-Stack Developer",
                 Skills:"Skills",
                 Birthday:"Birthday",
                 Age:"Age",
@@ -227,8 +231,12 @@ const resources = {
         },
         Home:{
             Title:"Accueil",
+            Title_hello:"Bonjour",
+            Title_im:"Je suis",
+
             Title_before_span:"Je suis un ",
             Title_span:"Développeur de Logiciels",
+            Title_span2:"Développeur Full Stack",
             Title_after_span:"",
         },
 
@@ -238,6 +246,7 @@ const resources = {
             About_me:{
                 Title_1:"En savoir plus sur moi",  
                 Title_11:"Développeur de Logiciels",
+                Title_12:"Développeur Full Stack",
                 Birthday:"Anniversaire",
                 Age:"Âge",
                 Website:"Site Web",

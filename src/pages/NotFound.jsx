@@ -1,3 +1,5 @@
+import '../assets/css/notfound.css';
+
 function NotFound(){
     return <>
         <div className="Not_Found_404"> 
