@@ -522,7 +522,7 @@ const projects_FR = [
       description: "L'application de chat en temps réel est une plateforme web qui permet aux utilisateurs de participer à des discussions en solo ou en groupe en temps réel. Les utilisateurs peuvent envoyer des messages texte, des images et des fichiers, ce qui en fait une solution idéale pour des conversations informelles comme pour une collaboration professionnelle.",
       github_link: "#",
       
-      technology: ["Python", "Django", "HTML", "CSS", "JavaScript", "Jquery", "Bootstrap"],
+      technology: ["Python", "Django","RESTful API", "HTML", "CSS", "JavaScript", "Jquery", "Bootstrap"],
       technology_used: {
         'front_end': ["HTML", "CSS", "JavaScript", "Jquery", "Bootstrap"],
         'back_end': ["Python", "Django", "RESTful API", "JSON"],

@@ -700,7 +700,7 @@ const projects_ENG = [
       github_link: "#",
       
     
-      technology: ["Python","Django","HTML","CSS","JavaScript","Jquery","Bootstrap"],
+      technology: ["Python","Django","RESTful API","HTML","CSS","JavaScript","Jquery","Bootstrap"],
       technology_used:{'front_end':["HTML","CSS","JavaScript","Jquery","Bootstrap"],
         'back_end':["Python","Django","RESTful API","JSON"],
         'database':['SQL',"Postgresql"],

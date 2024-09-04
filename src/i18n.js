@@ -44,6 +44,7 @@ const resources = {
           Search:"Search",
           All:"All",
           keyhigh:"Key Highlights",
+          more:"more",
         },
 
         Home:{
@@ -228,6 +229,7 @@ const resources = {
           Search:"Recherche",
           All:"Tous",
           keyhigh:"Points Clés",
+          more:"plus",
         },
         Home:{
             Title:"Accueil",

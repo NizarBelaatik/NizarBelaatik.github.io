@@ -29,6 +29,10 @@ const ProjectItem = ({ project }) => {
                   ))}
 
               </div>
+
+              <div className="projectM">
+                <a href={`/#/project/${project.id}`} className="projectM_a">{t("Titles.more")}...</a>
+              </div>
               
           </div>
           

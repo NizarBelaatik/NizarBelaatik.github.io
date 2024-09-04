@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Filter = ({ setSelectedTechnology, selectedTechnology, searchText, setSearchText ,placeHolder,all}) => {
-  const categories = [all, 'Python', 'PHP', 'JAVA','React.js',]; // Add more categories as needed
+  const categories = [all, 'Python', 'Django','JAVA','RESTful API',]; // Add more categories as needed
 
   return (
     <div>
