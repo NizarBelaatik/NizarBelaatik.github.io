@@ -157,99 +157,251 @@ const projects_ENG = [
       id: "1",
       folderid:"1",
       projectType:"web",
-      platforme:"",
-      title: "CRM System",
+      platforme:"Web Application",
+      title: "Integrated Project Management Platform",
       image: getProjectImages('project1'),
-      category: "CRM",
+      category: "ERP",
       date:"September 2023 - February 2024",
       client_for: "Freelance",
       role: "Full-Stack Developer",
-      description: "This CRM system was developed to enhance operational efficiency and project management capabilities.",
+      description: "A comprehensive platform designed to centralize project management tasks, including data collection, processing, and verification. The platform integrates form submission, data management, real-time communication, and role-based access control. Additionally, it includes a backup server to ensure data integrity and recovery.",
       github_link: "#",
       
-      technology: ["Python","Django","HTML","CSS","JavaScript","Jquery","Bootstrap"],
+      technology: ["Python","Django","RESTful API","HTML","CSS","JavaScript","Jquery","Bootstrap"],
       technology_used:{'front_end':["HTML","CSS","JavaScript","Jquery","Bootstrap"],
         'back_end':["Python","Django","RESTful API","JSON"],
         'database':['SQL',"Postgresql"],
-        'techFra':[]
+        'techFra':null
       },
-      details: "Detailed information about Project One.",
+      details: "",
   
-      RoleResp:[{
-        Title_1:"Full-stack Developer",
+      RoleResp:[
+        {
+        Title_1:"Front-end Development",
         Data:[
-          {Title:'Back-end Development',
-            Data:["Designed and implemented the database schema for storing",
-              "Developed RESTful APIs for handling ... data, ... and ... managment",
-              "Implemented user authentication and role-based access control"]
+          {Title:"User Interface Design:",
+            Data:["Designed and implemented the user interface using HTML, CSS, and JavaScript.",
+              "Ensured a responsive and intuitive design using Bootstrap for a seamless user experience across devices.",
+            ]
           },
-          {Title:'Front-end Development',
-            Data:["Created responsive UI components using Bootstrap and custom CSS",
-              "Integrated AJAX calls for real-time data updates and interactive features",
-              "Developed dashboards for different user roles, including ..., ... and administrators"]
-          }
+          {Title:"Form Integration:",
+            Data:["Developed forms to capture various types of data (text, numbers, images, signatures).",
+              "Integrated automated geolocation features allowing users to capture their location with a single click."
+            ]
+          },
+          {Title:"Communication Features:",
+            Data:["Implemented chatbox functionality for real-time communication between users within each project."]
+          },
+          {Title:"User Experience (UX):",
+            Data:["Ensured the platform was user-friendly and visually consistent.",
+              "Conducted usability testing to refine the interface and improve user interactions."]
+          },
+          
+
+        ],
+      },
+    
+      {
+        Title_1:"Back-end Development",
+        Data:[
+          {Title:"Server-Side Logic:",
+            Data:["Developed backend functionality using Django, including user authentication, role-based access control, and data processing.",
+              "Implemented RESTful APIs to handle communication between frontend and backend systems."]
+          },
+          {Title:"Database Management:",
+            Data:["Designed and managed the PostgreSQL database schema to store user information, project data, and backup records.",
+              "Implemented CRUD (Create, Read, Update, Delete) operations for managing project and user data.",
+              "Created a robust database structure that supported all required functionalities and data integrity."]
+          },
+          {Title:"Backup System:",
+            Data:["Implemented a local server backup system to automatically save all data daily.",
+              "Ensured that backup processes were reliable and data could be restored as needed.",
+              "Enhanced data security and reliability with a regular backup process, ensuring minimal data loss."]
+          },
+          {Title:"Role-Based Access Control:",
+            Data:["Developed and managed role-based access control to restrict and grant access to various parts of the platform based on user roles.",
+              "Implemented effective access controls to protect sensitive information and manage user permissions."]
+          },
+
+        ],
+      },
+      {
+        Title_1:"Additional Contributions",
+        Data:[
+          {Title:"Integration and Testing:",
+            Data:["Integrated frontend and backend components to ensure seamless functionality.",
+              "Conducted extensive testing to identify and fix bugs, optimize performance, and ensure overall stability.",
+            "Delivered a fully functional platform with minimal issues, meeting project requirements and user expectations."]
+          },
+          {Title:"Documentation:",
+            Data:["Created comprehensive documentation for both the frontend and backend components, including setup instructions, usage guidelines, and troubleshooting tips."]
+          },
+          {Title:"Collaboration and Communication:",
+            Data:["Coordinated with other team members and stakeholders to gather requirements, provide updates, and incorporate feedback.",
+              "Ensured that the project met the needs of all users through effective communication and collaboration."]
+          },
         ],
       }],
       KeyFeatures:[{
         Title_1:null,
         Data:[{
-            Title:'Role-Based Access Control',
-            Data:["Different levels of access for sales agents, managers, and administrators, ensuring data security and proper workflow management."]
+            Title:'User Authentication and Role-Based Access:',
+            Data:["Registration: Access to the platform is granted only to users registered by an administrator.",
+              "Role-Based Access Control: Users can only view or interact with parts of the platform that are relevant to their assigned roles."
+            ]
           },
-          {Title:'Reporting and Analytics',
-            Data:["Customizable reports and dashboards for visualizing sales performance, customer trends, and inventory levels"]
+          {Title:'Data Collection and Management:',
+            Data:["Form Integration: Users fill out forms with text, numbers, images, and signatures.",
+              "Downloadable Forms: Forms can be downloaded as XLSX files for offline processing.",
+              "File Management: Includes a recycle bin for recovering accidentally deleted files.",
+            ]
+          },
+          {Title:'Communication and Collaboration:',
+            Data:["Chatbox: Each project/client includes a chatbox for real-time communication.",
+              "Project Status Tracking: Track and update project statuses, including added, finished, sent, and modified.",
+            ]
+          },
+          {Title:'Reporting and Statistics:',
+            Data:["Project Statistics: Track and view statistics on project progress and statuses.",
+              "Worker Statistics: Administrators can view performance metrics for auditreurs, including project counts and statuses over various time periods.",
+            ]
           },
         ],
       }],
       ChallSolu:[{
         Title_1:null,
-        Data:[{
-            Title:'Role-Based Access Control',
-            Data:["Different levels of access for sales agents, managers, and administrators, ensuring data security and proper workflow management."]
+        Data:[
+          {Title:'Secure Access Management:',
+            Data:["Challenge: Ensuring that only authorized users can access the platform and its features.",
+              "Solution: Implement Django's built-in authentication system and role-based permissions to control access."
+            ]
           },
-          {Title:'Reporting and Analytics',
-            Data:["Customizable reports and dashboards for visualizing sales performance, customer trends, and inventory levels"]
+          {Title:'User Experience:',
+            Data:["Challenge: Balancing complex functionality with a user-friendly interface.",
+              "Solution: Use Bootstrap and jQuery to create an intuitive and responsive design."]
+          },
+          {Title:'Data Management and Recovery:',
+            Data:["Challenge: Managing and recovering data efficiently.",
+              "Solution: Include a recycle bin feature and robust error handling mechanisms."]
           },
         ],
       }],
       Reflection:[{
-        Title_1:null,
-        Data:[{
-            Title:'What You Learned:',
-            Data:["Gained deep insights into building scalable, secure, and user-friendly CRM systems. The project also enhanced my ability to work with large data sets and optimize database performance."]
-          },
-          {Title:'Improvements',
-            Data:["If revisiting the project, I would implement machine learning models to predict customer behavior and optimize sales strategies. Additionally, further automation in the inventory management process could reduce manual interventions."]
-          },
+        Title_1:'What You Learned',
+        Data:[
+            {
+              Title:"Role-Based Access Control: Gained hands-on experience with implementing secure, role-based access control, ensuring that users only have access to relevant data and functionalities.",
+              Data:null,},
+            {
+              Title:"Data Integrity and Backup: Learned the importance of regular data backups and recovery processes to prevent data loss and ensure business continuity.",
+              Data:null,},
+            {
+              Title:"Integration of Frontend and Backend: Enhanced skills in integrating frontend and backend technologies, ensuring seamless data flow and user interaction.",
+              Data:null,},
+            {
+              Title:"User Authentication: Improved understanding of secure authentication methods and user management in web applications.",
+              Data:null,},
+              
+             
         ],
-      }],
+      },
+      {
+        Title_1:'Improvements',
+        Data:[{
+            Title:"Enhanced User Interface:",
+            Data:[
+              "Improvement: Continuously refine the user interface for a more intuitive experience based on user feedback.",
+              "Plan: Conduct user testing and implement design improvements.",
+            ]
+          } ,
+          {
+            Title:"Advanced Analytics:",
+            Data:[
+              "Improvement: Expand reporting and analytics features to provide more detailed insights into project and worker performance.",
+              "Plan: Integrate advanced data visualization tools and reporting features.",
+            ]
+          } ,
+          {
+            Title:"Scalability:",
+            Data:[
+              "Improvement: Improve the platform’s scalability to handle increased user load and data volume.",
+              "Plan: Optimize backend processes and consider cloud-based solutions for scalability.",
+            ]
+          } ,
+          {
+            Title:"Automated Backup Enhancements:",
+            Data:[
+              "Improvement: Enhance the backup system to include cloud storage options and more frequent backup intervals.",
+              "Plan: Implement incremental backups and explore hybrid backup solutions.",
+            ]
+          } 
+        ],
+      }
+    ],
   
       VisualsMedia:{
         ScreenShot:[
-          {ImInTitle:null,
-            ImInData:[{ 
-            image:['1.png'],
-            info:['Dashboard ScreenShot',
-              'Main dashboard showing  and  .'
+          {ImInTitle:"Dashboard",
+            ImInData:[
+              { 
+                image:['1.png'],
+                info:["The dashboard provides an overview of recent activities and the status of projects. It displays key statistics such as the number of projects added (ajoute), finished (fini), sent (envoye), and modified (modification faite)."]
+              },
             ]
-          },{ 
-            image:['2.png'],
-            info:['Cust Managment',
-              'Interface for managing customer information'
+          },
+          {ImInTitle:"Project Table with Chatbox and Files Box",
+            ImInData:[
+              { 
+                image:['2.png'],
+                info:["This screen displays a table of projects organized by their current state. Each project entry includes a chatbox for communication and a files box for managing project documents."]
+              },
             ]
-          }]},
+          },
+          {ImInTitle:"Auditreur Overview",
+            ImInData:[
+              { 
+                image:['3.png'],
+                info:["An overview screen focused on the performance and activity of auditreurs. It shows statistics related to the projects they have worked on over various time periods."]
+              },
+            ]
+          },
+          {ImInTitle:"Projects by State and Auditreur Activity",
+            ImInData:[
+              { 
+                image:['track1.png'],
+                info:["This screen provides a detailed view of projects organized by their state, such as fini, envoye, and modification faite. It includes statistics on how many projects in each state were handled by a specific auditreur (e.g., Auditreur X) over various time periods."]
+              },
+            ]
+          },
+          {ImInTitle:"Auditreur Activity Overview",
+            ImInData:[
+              { 
+                image:['track2.png'],
+                info:["An overview of individual auditreur activities, showing detailed statistics on what they have worked on over various time periods."]
+              },
+            ]
+          },
+          {ImInTitle:"Visiteur Technique Overview",
+            ImInData:[
+              { 
+                image:['vt1.png'],
+                info:["An overview screen that shows the overall activity and contributions of the Visiteur Technique, including the projects they are involved in and their data submissions."]
+              },
+            ]
+          },
+
+          {ImInTitle:"Form for Visiteur Technique",
+            ImInData:[
+              { 
+                image:['vt2.png'],
+                info:["The form that the Visiteur Technique needs to fill out when collecting and submitting project data. It includes fields for text, numbers, images, signatures, and automated geolocation."]
+              },
+            ]
+          },
           
         ],
-        Diagrams:[
-          {ImInTitle:null,
-            ImInData:[{ 
-              image:['1.png','2.png'],
-              info:['Diagrams ScreenShot',
-                'Diagram showing the architecture of the CRM system, including data flow and integrations'
-              ]
-            }]
-          }
-        ],
+
+        Diagrams:null,
 
         VideoDemo:null
       },

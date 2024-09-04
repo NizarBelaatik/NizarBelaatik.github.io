@@ -7,99 +7,223 @@ const projects_FR = [
       id: "1",
       folderid:"1",
       projectType:"web",
-      platforme:"",
-      title: "Système CRM",
+      platforme:"Application Web",
+      title: "Plateforme Intégrée de Gestion de Projet",
       image: getProjectImages('project1'),
-      category: "CRM",
+      category: "ERP",
       date:"Septembre 2023 - Février 2024",
       client_for: "Freelance",
       role: "Développeur Full-Stack",
-      description: "Ce système CRM a été développé pour améliorer l'efficacité opérationnelle et les capacités de gestion de projets.",
+      description: "Une plateforme complète conçue pour centraliser les tâches de gestion de projet, y compris la collecte, le traitement et la vérification des données. La plateforme intègre la soumission de formulaires, la gestion des données, la communication en temps réel et le contrôle d'accès basé sur les rôles. De plus, elle comprend un serveur de sauvegarde pour garantir l'intégrité et la récupération des données.",
       github_link: "#",
       
-      technology: ["Python","Django","HTML","CSS","JavaScript","Jquery","Bootstrap"],
+      technology: ["Python","Django","RESTful API","HTML","CSS","JavaScript","Jquery","Bootstrap"],
       technology_used:{'front_end':["HTML","CSS","JavaScript","Jquery","Bootstrap"],
         'back_end':["Python","Django","RESTful API","JSON"],
         'database':['SQL',"Postgresql"],
-        'techFra':[]
+        'techFra':null
       },
-      details: "Informations détaillées sur le Projet Un.",
   
-      RoleResp:[{
-        Title_1:"Développeur Full-Stack",
-        Data:[
-          {Title:'Développement Back-end',
-            Data:["Conception et implémentation du schéma de base de données pour le stockage",
-              "Développement d'APIs RESTful pour gérer ... données, ... et ... gestion",
-              "Implémentation de l'authentification des utilisateurs et du contrôle d'accès basé sur les rôles"]
-          },
-          {Title:'Développement Front-end',
-            Data:["Création de composants UI responsives utilisant Bootstrap et CSS personnalisé",
-              "Intégration des appels AJAX pour les mises à jour de données en temps réel et les fonctionnalités interactives",
-              "Développement de tableaux de bord pour différents rôles d'utilisateur, y compris ..., ... et administrateurs"]
-          }
+      RoleResp: [ 
+        { Title_1: "Développement Front-end", 
+          Data: [ 
+            { Title: "Conception de l'Interface Utilisateur :", 
+              Data: [ "Conception et mise en œuvre de l'interface utilisateur en utilisant HTML, CSS et JavaScript.", "Assuré un design réactif et intuitif en utilisant Bootstrap pour une expérience utilisateur fluide sur tous les appareils." 
+
+              ] 
+            }, 
+            { Title: "Intégration des Formulaires :", 
+              Data: [ "Développement de formulaires pour capturer divers types de données (texte, chiffres, images, signatures).", "Intégration de fonctionnalités automatisées de géolocalisation permettant aux utilisateurs de capturer leur emplacement en un clic." 
+
+              ] }, 
+            { Title: "Fonctionnalités de Communication :", 
+              Data: [ "Implémentation de la fonctionnalité de chat en temps réel pour la communication entre les utilisateurs au sein de chaque projet." ] 
+            }, 
+            { Title: "Expérience Utilisateur (UX) :", 
+              Data: [ "Assuré que la plateforme soit conviviale et visuellement cohérente.", 
+                "Réalisation de tests d'utilisabilité pour affiner l'interface et améliorer les interactions des utilisateurs." 
+              ] 
+            }
+          ]
+        },
+        { Title_1: "Développement Back-end", Data: [ { Title: "Logique Serveur :", Data: [ "Développement des fonctionnalités back-end en utilisant Django, y compris l'authentification des utilisateurs, le contrôle d'accès basé sur les rôles et le traitement des données.", "Implémentation d'API RESTful pour gérer la communication entre les systèmes frontend et backend." ] }, { Title: "Gestion de la Base de Données :", Data: [ "Conception et gestion du schéma de la base de données PostgreSQL pour stocker les informations des utilisateurs, les données des projets et les enregistrements de sauvegarde.", "Implémentation des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) pour la gestion des données des projets et des utilisateurs.", "Création d'une structure de base de données robuste supportant toutes les fonctionnalités requises et garantissant l'intégrité des données." ] }, { Title: "Système de Sauvegarde :", Data: [ "Implémentation d'un système de sauvegarde local pour enregistrer automatiquement toutes les données chaque jour.", "Assurance que les processus de sauvegarde étaient fiables et que les données pouvaient être restaurées si nécessaire.", "Renforcement de la sécurité et de la fiabilité des données avec un processus de sauvegarde régulier, minimisant la perte de données." ] }, { Title: "Contrôle d'Accès Basé sur les Rôles :", Data: [ "Développement et gestion du contrôle d'accès basé sur les rôles pour restreindre et accorder l'accès à différentes parties de la plateforme en fonction des rôles des utilisateurs.", "Implémentation de contrôles d'accès efficaces pour protéger les informations sensibles et gérer les permissions des utilisateurs." ] } ] },
+        { Title_1: "Contributions Supplémentaires", Data: [ { Title: "Intégration et Tests :", Data: [ "Intégration des composants frontend et backend pour assurer une fonctionnalité fluide.", "Réalisation de tests approfondis pour identifier et corriger les bugs, optimiser les performances et garantir la stabilité globale.", "Livraison d'une plateforme entièrement fonctionnelle avec un minimum de problèmes, répondant aux exigences du projet et aux attentes des utilisateurs." ] }, { Title: "Documentation :", Data: [ "Création d'une documentation complète pour les composants frontend et backend, y compris les instructions d'installation, les directives d'utilisation et les conseils de dépannage." ] }, { Title: "Collaboration et Communication :", Data: [ "Coordination avec les autres membres de l'équipe et les parties prenantes pour recueillir les exigences, fournir des mises à jour et intégrer les retours.", "Assurance que le projet répondait aux besoins de tous les utilisateurs grâce à une communication et une collaboration efficaces." ] } ] }
+
+      ],
+
+      KeyFeatures: [ 
+        { Title_1: null, 
+          Data: [ 
+            { Title: "Authentification des Utilisateurs et Contrôle d'Accès Basé sur les Rôles :", 
+              Data: [ "Inscription : L'accès à la plateforme est accordé uniquement aux utilisateurs enregistrés par un administrateur.", 
+                "Contrôle d'Accès Basé sur les Rôles : Les utilisateurs peuvent uniquement voir ou interagir avec les parties de la plateforme pertinentes pour leurs rôles assignés." 
+              ] 
+            }, 
+            { Title: "Collecte et Gestion des Données :", 
+              Data: [ "Intégration des Formulaires : Les utilisateurs remplissent des formulaires avec des textes, des chiffres, des images et des signatures.", 
+                "Formulaires Téléchargeables : Les formulaires peuvent être téléchargés au format XLSX pour un traitement hors ligne.", 
+                "Gestion des Fichiers : Inclut une corbeille pour récupérer les fichiers supprimés par accident." 
+              ] 
+            }, 
+            { Title: "Communication et Collaboration :", 
+              Data: [ "Chat : Chaque projet/client inclut un chat pour la communication en temps réel.", 
+                "Suivi des Statuts des Projets : Suivi et mise à jour des statuts des projets, y compris ajoutés, terminés, envoyés et modifiés." 
+              ] 
+            }, 
+            { Title: "Rapports et Statistiques :", 
+              Data: [ "Statistiques des Projets : Suivi et consultation des statistiques sur l'avancement et les statuts des projets.", 
+                "Statistiques des Travailleurs : Les administrateurs peuvent consulter les indicateurs de performance pour les auditeurs, y compris le nombre de projets et les statuts sur différentes périodes." 
+              ] 
+            } 
+          ] 
+        } 
+      ],
+
+
+      ChallSolu: [ 
+        { Title_1: null, 
+          Data: [ 
+            { Title: "Gestion Sécurisée des Accès :", 
+              Data: [ "Défi : Assurer que seuls les utilisateurs autorisés peuvent accéder à la plateforme et à ses fonctionnalités.", 
+                "Solution : Implémenter le système d'authentification intégré de Django et les permissions basées sur les rôles pour contrôler l'accès." 
+              ] 
+            }, 
+            { Title: "Expérience Utilisateur :", 
+              Data: [ "Défi : Équilibrer la fonctionnalité complexe avec une interface conviviale.", 
+                "Solution : Utiliser Bootstrap et jQuery pour créer un design intuitif et réactif." 
+              ] 
+            }, 
+            { Title: "Gestion et Récupération des Données :", 
+              Data: [ "Défi : Gérer et récupérer les données de manière efficace.", 
+                "Solution : Inclure une fonctionnalité de corbeille et des mécanismes de gestion des erreurs robustes." 
+              ] 
+            } 
+          ] 
+        } 
+      ],
+
+      Reflection: [ 
+        { Title_1: "Ce Que Vous Avez Appris", 
+          Data: [ 
+            { Title: "Contrôle d'Accès Basé sur les Rôles :", 
+              Data: ["Acquisition d'une expérience pratique dans la mise en œuvre d'un contrôle d'accès sécurisé basé sur les rôles, garantissant que les utilisateurs n'ont accès qu'aux données et fonctionnalités pertinentes."] 
+            }, 
+            { Title: "Intégrité et Sauvegarde des Données :", 
+              Data: ["Compréhension de l'importance des sauvegardes régulières des données et des processus de récupération pour prévenir la perte de données et assurer la continuité des affaires." ]
+            }, 
+            { Title: "Intégration du Frontend et du Backend :", 
+              Data: ["Amélioration des compétences en intégration des technologies frontend et backend, garantissant un flux de données fluide et une interaction utilisateur cohérente."] 
+            }, 
+            { Title: "Authentification des Utilisateurs :", 
+              Data: ["Amélioration de la compréhension des méthodes d'authentification sécurisée et de la gestion des utilisateurs dans les applications web." ]
+            } 
+          ] ,
+          Data:[
+            {Title:"Contrôle d'Accès Basé sur les Rôles: Acquisition d'une expérience pratique dans la mise en œuvre d'un contrôle d'accès sécurisé basé sur les rôles, garantissant que les utilisateurs n'ont accès qu'aux données et fonctionnalités pertinentes.",
+              Data:null,
+            },
+            {Title:"Intégrité et Sauvegarde des Données: Compréhension de l'importance des sauvegardes régulières des données et des processus de récupération pour prévenir la perte de données et assurer la continuité des affaires.",
+              Data:null,
+            },
+            {Title:"Intégration du Frontend et du Backend: Amélioration des compétences en intégration des technologies frontend et backend, garantissant un flux de données fluide et une interaction utilisateur cohérente.",
+              Data:null,
+            },
+            {Title:"Authentification des Utilisateurs: Amélioration de la compréhension des méthodes d'authentification sécurisée et de la gestion des utilisateurs dans les applications web.",
+              Data:null,
+            },
+              
+             
         ],
-      }],
-      KeyFeatures:[{
-        Title_1:null,
-        Data:[{
-            Title:'Contrôle d\'accès basé sur les rôles',
-            Data:["Différents niveaux d'accès pour les agents commerciaux, les responsables et les administrateurs, assurant la sécurité des données et la gestion appropriée des flux de travail."]
-          },
-          {Title:'Rapports et Analyses',
-            Data:["Rapports personnalisables et tableaux de bord pour visualiser les performances des ventes, les tendances des clients et les niveaux de stocks"]
-          },
-        ],
-      }],
-      ChallSolu:[{
-        Title_1:null,
-        Data:[{
-            Title:'Contrôle d\'accès basé sur les rôles',
-            Data:["Différents niveaux d'accès pour les agents commerciaux, les responsables et les administrateurs, assurant la sécurité des données et la gestion appropriée des flux de travail."]
-          },
-          {Title:'Rapports et Analyses',
-            Data:["Rapports personnalisables et tableaux de bord pour visualiser les performances des ventes, les tendances des clients et les niveaux de stocks"]
-          },
-        ],
-      }],
-      Reflection:[{
-        Title_1:null,
-        Data:[{
-            Title:'Ce que vous avez appris :',
-            Data:["Acquisition d'une compréhension approfondie de la construction de systèmes CRM évolutifs, sécurisés et conviviaux. Le projet a également renforcé ma capacité à travailler avec de grands ensembles de données et à optimiser les performances de la base de données."]
-          },
-          {Title:'Améliorations',
-            Data:["Si je devais revisiter le projet, j'implémenterais des modèles d'apprentissage automatique pour prédire le comportement des clients et optimiser les stratégies de vente. De plus, une automatisation accrue du processus de gestion des stocks pourrait réduire les interventions manuelles."]
-          },
-        ],
-      }],
+        }, 
+        { Title_1: "Améliorations", 
+          Data: [ 
+            { Title: "Interface Utilisateur Améliorée :", 
+              Data: [ "Amélioration : Raffiner continuellement l'interface utilisateur pour une expérience plus intuitive basée sur les retours des utilisateurs.", 
+                "Plan : Réaliser des tests utilisateurs et mettre en œuvre des améliorations de design." 
+              ] 
+            }, 
+            { Title: "Analytique Avancée :", 
+              Data: [ "Amélioration : Étendre les fonctionnalités de reporting et d'analytique pour fournir des insights plus détaillés sur les performances des projets et des travailleurs.", 
+                "Plan : Intégrer des outils avancés de visualisation des données et des fonctionnalités de reporting." 
+              ] 
+            }, 
+            { Title: "Scalabilité :", 
+              Data: [ "Amélioration : Améliorer la scalabilité de la plateforme pour gérer une charge d'utilisateurs et un volume de données accrus.", 
+                "Plan : Optimiser les processus backend et envisager des solutions basées sur le cloud pour la scalabilité." 
+              ] 
+            }, 
+            { Title: "Améliorations de la Sauvegarde Automatisée :",
+              Data: [ "Amélioration : Renforcer le système de sauvegarde pour inclure des options de stockage en cloud et des intervalles de sauvegarde plus fréquents.", 
+                "Plan : Mettre en œuvre des sauvegardes incrémentielles et explorer des solutions de sauvegarde hybrides." 
+              ] 
+            } 
+          ] 
+        } 
+      ],
+
   
       VisualsMedia:{
         ScreenShot:[
-          {ImInTitle:null,
-            ImInData:[{ 
-            image:['1.png'],
-            info:['Dashboard ScreenShot',
-              'Main dashboard showing  and  .'
+          {ImInTitle:"Tableau de Bord",
+            ImInData:[
+              { 
+                image:['1.png'],
+                info:["Le tableau de bord offre un aperçu des activités récentes et des états des projets. Il affiche des statistiques clés telles que le nombre de projets ajoutés (ajouté), terminés (fini), envoyés (envoyé), et modifiés (modification faite)."]
+              },
             ]
-          },{ 
-            image:['2.png'],
-            info:['Cust Managment',
-              'Interface for managing customer information'
+          },
+          {ImInTitle:"Tableau de Projets avec Chatbox et Boîte de Fichiers",
+            ImInData:[
+              { 
+                image:['2.png'],
+                info:["Cet écran affiche un tableau des projets organisés par leur état actuel. Chaque entrée de projet inclut une chatbox pour la communication et une boîte de fichiers pour gérer les documents du projet."]
+              },
             ]
-          }]},
+          },
+          {ImInTitle:"Vue d’Ensemble des Auditeurs",
+            ImInData:[
+              { 
+                image:['3.png'],
+                info:["Un écran de vue d'ensemble axé sur la performance et l'activité des auditeurs. Il affiche des statistiques relatives aux projets sur lesquels ils ont travaillé pendant diverses périodes."]
+              },
+            ]
+          },
+          {ImInTitle:"Projets par État et Activité des Auditeurs",
+            ImInData:[
+              { 
+                image:['track1.png'],
+                info:["Cet écran offre une vue détaillée des projets organisés par leur état, tels que fini, envoyé, et modification faite. Il inclut des statistiques sur combien de projets dans chaque état ont été traités par un auditeur spécifique (par exemple, Auditeur X) sur diverses périodes de temps."]
+              },
+            ]
+          },
+          {ImInTitle:"Vue d’Activité de l’Auditeur X",
+            ImInData:[
+              { 
+                image:['track2.png'],
+                info:["Un aperçu des activités individuelles de l’auditeur X, montrant des statistiques détaillées sur les projets sur lesquels il a travaillé au cours de diverses périodes."]
+              },
+            ]
+          },
+          {ImInTitle:"Vue d’Ensemble du Visiteur Technique",
+            ImInData:[
+              { 
+                image:['vt1.png'],
+                info:["Un écran de vue d’ensemble montrant l’activité et les contributions du Visiteur Technique, y compris les projets dans lesquels il est impliqué et ses soumissions de données."]
+              },
+            ]
+          },
+
+          {ImInTitle:"Formulaire pour le Visiteur Technique",
+            ImInData:[
+              { 
+                image:['vt2.png'],
+                info:["Le formulaire que le Visiteur Technique doit remplir lorsqu'il collecte et soumet les données du projet. Il comprend des champs pour le texte, les chiffres, les images, les signatures, et la géolocalisation automatisée."]
+              },
+            ]
+          },
           
         ],
-        Diagrams:[
-          {ImInTitle:null,
-            ImInData:[{ 
-              image:['1.png','2.png'],
-              info:['Diagrams ScreenShot',
-                'Diagram showing the architecture of the CRM system, including data flow and integrations'
-              ]
-            }]
-          }
-        ],
+        Diagrams:null,
 
         VideoDemo:null
       },

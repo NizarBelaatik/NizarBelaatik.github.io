@@ -41,7 +41,8 @@ function ProTypeWeb({project}){
                         <h3><strong>{t('Portfolio.platforme')}:</strong> {project.platforme}</h3>
                         <h3><strong>{t('Portfolio.Role')}:</strong> {project.role}</h3>
                         <h3><strong>{t('Portfolio.Project_Description')}:</strong> {project.description}</h3>
-                        <h3><strong>GitHub:</strong> <a href={project.github_link} ><FaGithub   style={{ color: '#fafbfc ',fontSize:'32px'}}/></a></h3>
+                        {project.github_link != "#"? <h3><strong>GitHub:</strong> <a href={project.github_link} ><FaGithub   style={{ color: '#fafbfc ',fontSize:'32px'}}/></a></h3> :''}
+                        
 
                     </div>
 
