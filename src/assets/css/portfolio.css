@@ -331,7 +331,6 @@
   background-color: var(--c_04)!important;
   display: flex;
   justify-content: center;
-  z-index: 10000;
 }
 
 .projectM_a:hover,

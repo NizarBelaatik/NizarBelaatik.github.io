@@ -15,9 +15,7 @@ const ProjectItem = ({ project }) => {
       <div className="project_item">
           <div>
               <img  className="project_img" src={project.image[0]} alt={project.title}/>
-              <div className="project_more">
-                  <Link to={`/project/${project.id}`}><a className="project_link" ><FaPlus size={'56px'}/></a></Link>
-              </div>
+
           </div>
           
           <div className="portfolio_con">
@@ -33,7 +31,7 @@ const ProjectItem = ({ project }) => {
               <div className="projectM">
                 <a href={`/#/project/${project.id}`} className="projectM_a">{t("Titles.more")}...</a>
               </div>
-              
+
           </div>
           
       </div>
