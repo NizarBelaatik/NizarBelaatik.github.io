@@ -160,7 +160,7 @@ const projects_ENG = [
       platforme:"Web Application",
       title: "Integrated Project Management Platform",
       image: getProjectImages('project1'),
-      category: "ERP",
+      category: "IGEP",
       date:"September 2023 - February 2024",
       client_for: "Freelance",
       role: "Full-Stack Developer",

@@ -10,7 +10,7 @@ const projects_FR = [
       platforme:"Application Web",
       title: "Plateforme Intégrée de Gestion de Projet",
       image: getProjectImages('project1'),
-      category: "ERP",
+      category: "IGEP",
       date:"Septembre 2023 - Février 2024",
       client_for: "Freelance",
       role: "Développeur Full-Stack",
